@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"module": "commonjs",
+		"jsx": "react",
+		"moduleResolution": "node",
+		"sourceMap": true,
+		"outDir": "./dist",
+		"removeComments": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"preserveConstEnums": true
+	},
+	"include": ["src"],
+	"exclude": ["node_modules"]
+}
