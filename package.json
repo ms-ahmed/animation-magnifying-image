@@ -1,5 +1,5 @@
 {
-	"name": "animation-magnify-react",
+	"name": "magnifying-div-animation",
 	"version": "1.0.0",
 	"description": "A React plugin that animates your background image by magnifying it.",
 	"typings": "lib/index.d.ts",
@@ -13,11 +13,9 @@
 	},
 	"keywords": [
 		"react",
-		"text",
-		"transition",
-		"animation",
-		"motion",
-		"plugin"
+		"maginfying div",
+		"spring animation",
+		"react spring"
 	],
 	"author": "Mansan Souleiman Ahmed",
 	"license": "MIT",
@@ -39,9 +37,14 @@
 		"webpack-dev-server": "^3.11.0"
 	},
 	"dependencies": {
+		"magnifying": "file:magnifying-1.0.0.tgz",
 		"prop-types": "^15.7.2",
 		"react-spring": "^8.0.27",
 		"styled-components": "^5.2.1"
+	},
+	"peerDependencies": {
+		"prop-types": "^15.7.2",
+		"react": ">=16.13.1"
 	},
 	"files": [
 		"lib",

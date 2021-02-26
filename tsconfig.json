@@ -5,7 +5,7 @@
 		"jsx": "react",
 		"moduleResolution": "node",
 		"sourceMap": true,
-		"outDir": "./dist",
+		"outDir": "./lib",
 		"removeComments": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
