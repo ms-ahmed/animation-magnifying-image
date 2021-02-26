@@ -3,7 +3,7 @@ import React, { useState, useCallback, useRef, useEffect } from 'react';
 // @ts-ignore
 import { useTrail, animated } from 'react-spring';
 // @ts-ignore
-import propTypes from 'prop-types';
+import propTypes, { number } from 'prop-types';
 import { DivHooks } from './div-hooks';
 interface Props {
 	backgroundImage?: string;
@@ -32,7 +32,8 @@ const DivHooksComponent: React.FC<any> = (props: Props) => {
 			backgroundPositionContent={props.backgroundPositionContent}
 			backgroundSizeContent={props.backgroundSizeContent}
 			backgroundRepeatContent={props.backgroundRepeatContent}
-			onMouseMove={(event) => {
+			onMouseMove={(event: Object) => {
+				// @ts-ignore
 				set({ xy: [event.clientX, event.clientY] });
 			}}
 		>

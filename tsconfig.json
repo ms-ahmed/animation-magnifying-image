@@ -2,6 +2,7 @@
 	"compilerOptions": {
 		"target": "ES5",
 		"module": "commonjs",
+		"noImplicitAny": true,
 		"jsx": "react",
 		"moduleResolution": "node",
 		"sourceMap": true,
@@ -9,8 +10,9 @@
 		"removeComments": true,
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
-		"preserveConstEnums": true
+		"preserveConstEnums": true,
+		"declaration": true
 	},
-	"include": ["src"],
+	"include": ["./src/**/*.tsx", "./src/**/*.ts"],
 	"exclude": ["node_modules"]
 }

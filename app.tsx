@@ -1,8 +1,7 @@
 import * as React from 'react';
 import * as ReactDom from 'react-dom';
-import Magnifying from 'magnifying';
 
 const App: React.FC<any> = () => {
-	return <Magnifying />;
+	return <h1>test</h1>;
 };
 ReactDom.render(<App />, document.getElementById('root'));

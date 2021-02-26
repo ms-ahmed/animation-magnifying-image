@@ -1,0 +1,10 @@
+TS7016 error indicates that he modules being imported has no strongly typed definitions.
+That means we are attempting to use a JavaScript (not well define types) file on a TypeScript (strongly-typed) project.
+Inside the project you import you are using TypeScript and the module you import has not a precise type. It is against the purpose of typescrpit => define all types.
+
+On a TypeScript project, there is a tsconfig.json file which provides all the information on how to compile the project.  The CompilerOptions node contains several configuration entries. By default, the NoImplicitAny settings is set to false, and it may not be visible on your settings.  This setting allows our project to use files and libraries that are purely written with JavaScript.  To override this error, we can add the value and set it to true as shown below.
+
+
+
+"noUnusedLocals": false,
+https://www.ozkary.com/2020/02/typescript-ts7016-could-not-find-declare.html.html
