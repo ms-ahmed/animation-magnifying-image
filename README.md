@@ -1,4 +1,4 @@
-# spring-sum-up
+# magnifying-div-animation
 
 ## Installation
 
