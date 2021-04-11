@@ -18,7 +18,6 @@
 <br/>
 <p>Here's the most basic way to add the package to your page:</p>
 <br/>
-```
 import Magnify from 'magnifying-div-animation';
 
     <Mag
@@ -28,8 +27,6 @@ import Magnify from 'magnifying-div-animation';
     	width="100%"
     	padding="15px"
     />
-
-```
 
 <p>
 Just import the component you want to use and then use it somewhere.
@@ -168,5 +165,3 @@ All adjustable parameters are defined by default,(but of course you can modify t
         </tr>
     </tbody>
 </table>
-
-```
