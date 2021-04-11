@@ -154,7 +154,7 @@ All adjustable parameters are defined by default,(but of course you can modify t
           <tr>
             <td> backgroundSizeContent</td>
             <td>string</td>
-            <td>1"20% 120%"</td>
+            <td>"120% 120%"</td>
             <td>Yes</td>
             <td> If you change this parameter it won't affect the container div. It is required otherwise you won't get the magnifying div.</td>
         </tr>
