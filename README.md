@@ -2,12 +2,14 @@
 
 ## Installation
 
-`npm install --save magnifying-div-animation`
+`npm install magnifying-div-animation`
 
 ## Documentation
 
 <a href="https://codesandbox.io/s/young-darkness-3iq93?file=/package.json">
-        <p style="color: #008000">See Live Examples on CodeSandbox</p>
+    <strong> 
+         <p style="color: #008000">See Live Examples on CodeSandbox</p>
+    </strong>
 </a>
 <br/>
 <p>
