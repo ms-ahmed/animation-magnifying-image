@@ -7,7 +7,7 @@
 ## Documentation
 
 <a href="https://codesandbox.io/s/young-darkness-3iq93?file=/package.json">
-        <p style="color: green">See Live Examples on CodeSandbox</p>
+        <p style="color: #008000">See Live Examples on CodeSandbox</p>
 </a>
 <br/>
 <p>
@@ -16,9 +16,6 @@
 <br/>
 <p> This package was built with react spring.</p>
 <br/>
-<p>Here's the most basic way to add the package to your page:</p>
-<br/>
-import Magnify from 'magnifying-div-animation';
 
     <Mag
     	backgroundImage="url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg)"
@@ -29,7 +26,6 @@ import Magnify from 'magnifying-div-animation';
     />
 
 <p>
-Just import the component you want to use and then use it somewhere.
 All adjustable parameters are defined by default,(but of course you can modify them) the size of the container div, the size of the divs with the magnifying glass effect, the number of magnifying divs, parameters related to the background image such as background-size, background-repeat, background-color, background-position.
 <p>The container div refers to the div that contains the magnifying divs.The magnifying div refers to the all the divs that you create inside the container div.</p>
 <p>You can see below all the parameters you can change:</p>
@@ -74,9 +70,9 @@ All adjustable parameters are defined by default,(but of course you can modify t
             <td>backgroundImage</td>
             <td>string</td>
             <td>
-            url(https://www.partir.com/
+            "url(https://www.partir.com/
             images/incontournables/japon-hakone
-            -fuji.jpg)
+            -fuji.jpg)"
             </td>
             <td>Yes</td>
             <td>This url is used for the maginifying divs.</td>
