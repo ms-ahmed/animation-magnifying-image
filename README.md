@@ -8,7 +8,7 @@
 
 <a href="https://codesandbox.io/s/young-darkness-3iq93?file=/package.json">
     <strong> 
-         <p style="color: #008000">See Live Examples on CodeSandbox</p>
+         <p>See Live Examples on CodeSandbox</p>
     </strong>
 </a>
 <br/>
