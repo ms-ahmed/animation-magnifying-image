@@ -73,14 +73,11 @@ All adjustable parameters are defined by default,(but of course you can modify t
         <tr>
             <td>backgroundImage</td>
             <td>string</td>
-           <a href="https://www.partir.com/
-            images/incontournables/japon-hakone
-            -fuji.jpg"> <td>
+            <td>
             url(https://www.partir.com/
             images/incontournables/japon-hakone
             -fuji.jpg)
             </td>
-          </a>
             <td>Yes</td>
             <td>This url is used for the maginifying divs.</td>
         </tr>
