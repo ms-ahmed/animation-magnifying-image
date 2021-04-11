@@ -167,6 +167,6 @@ All adjustable parameters are defined by default,(but of course you can modify t
             <td> If you change this parameter it won't affect the container div. It is required otherwise you won't get the magnifying div.</td>
         </tr>
     </tbody>
-
 </table>
+
 ```
