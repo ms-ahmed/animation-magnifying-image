@@ -2,32 +2,32 @@
 
 ## Installation
 
-`npm install --save animation-magnify-react`
+`npm install --save magnifying-div-animation`
 
 ## Documentation
 
 <a href="">
         <p style="color: green">See Live Examples on CodeSandbox</p>
 </a>
-
+<br/>
 <p>
-spring-sum-up allows you to add a magnifying glass effect on an image, or short sentences, to a page. So, you can install this package you will have a div in which you determine all the necessary parameters to have an image in the backgroung.
+"magnifying-div-animation" allows you to add a magnifying glass effect on an image. When you install this package, you install a container div that have a customizable background (for more details look at the parameters) and magnifying divs inside that listens to the the mouse movement inside the container div.
 </p>
-<p> 
-CSS and implemented with React Spring to animate magnifying divs. It also allows to determine the size of the container div and the size of the magnifying divs.
-Here's the most basic way to add the package to your page:
-</p>
-
+<br/>
+<p> This package was built with react spring.</p>
+<br/>
+<p>Here's the most basic way to add the package to your page:</p>
+<br/>
 ```
-import React from 'react';
-import { AnimationMagnify } from 'animation-magnify-react';
+import Magnify from 'magnifying-div-animation';
 
-    	<AnimationMagnify
-    			backgroundImage="url(https://static.toiimg.com/photo/72975551.cms)"
-    			widthContent="50%"
-    			height="100vh"
-    			width="100%"
-    		/>
+    <Mag
+    	backgroundImage="url(https://helpx.adobe.com/content/dam/help/en/photoshop/using/convert-color-image-black-white/jcr_content/main-pars/before_and_after/image-before/Landscape-Color.jpg)"
+    	widthContent="20%"
+    	height="300px"
+    	width="100%"
+    	padding="15px"
+    />
 
 ```
 
@@ -55,42 +55,7 @@ All adjustable parameters are defined by default,(but of course you can modify t
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>backgroundImage</td>
-            <td>string</td>
-           <a href="https://www.partir.com/
-            images/incontournables/japon-hakone
-            -fuji.jpg"> <td>
-            url(https://www.partir.com/
-            images/incontournables/japon-hakone
-            -fuji.jpg)
-            </td>
-          </a>
-            <td>Yes</td>
-            <td> - </td>
-        </tr>
-         <tr>
-            <td>padding</td>
-            <td>string</td>
-           <td>0</td>
-            <td>No</td>
-            <td> - </td>
-        </tr>
-         <tr>
-            <td>backgroundRepeat</td>
-            <td>string</td>
-           <td>no-repeat</td>
-            <td>No</td>
-            <td> - </td>
-        </tr>
-        <tr>
-            <td>backgroundSize</td>
-            <td>string</td>
-           <td>cover</td>
-            <td>No</td>
-            <td> - </td>
-        </tr>
-        <tr>
+      <tr>
             <td>height</td>
             <td>string</td>
              <td>
@@ -108,6 +73,55 @@ All adjustable parameters are defined by default,(but of course you can modify t
             <td>Yes</td>
             <td>The parameter allows to set the width of the container div. You should use values in px, or viewport, and %.</td>
         </tr>
+        <tr>
+            <td>backgroundImage</td>
+            <td>string</td>
+           <a href="https://www.partir.com/
+            images/incontournables/japon-hakone
+            -fuji.jpg"> <td>
+            url(https://www.partir.com/
+            images/incontournables/japon-hakone
+            -fuji.jpg)
+            </td>
+          </a>
+            <td>Yes</td>
+            <td>This url is used for the maginifying divs.</td>
+        </tr>
+         <tr>
+            <td>padding</td>
+            <td>string</td>
+           <td>0</td>
+            <td>No</td>
+            <td> - </td>
+        </tr>
+         <tr>
+            <td>Opacity</td>
+            <td>string</td>
+           <td>".8"</td>
+            <td>No</td>
+            <td> - </td>
+        </tr>
+         <tr>
+            <td>backgroundRepeat</td>
+            <td>string</td>
+           <td>"no-repeat"</td>
+            <td>No</td>
+            <td> If you change this parameter it won't affect the magnifying div. </td>
+        </tr>
+        <tr>
+            <td>backgroundSize</td>
+            <td>string</td>
+           <td>"cover"</td>
+            <td>No</td>
+            <td> If you change this parameter it won't affect the magnifying div. </td>
+        </tr>
+          <tr>
+            <td>backgroundColor</td>
+            <td>string</td>
+           <td>"#fff"</td>
+            <td>No</td>
+            <td> - </td>
+        </tr>
           <tr>
             <td>opacity</td>
             <td>string</td>
@@ -120,7 +134,7 @@ All adjustable parameters are defined by default,(but of course you can modify t
         <tr>
             <th></th>
             <th></th>
-            <th>The magnifying div</th>
+            <th>The magnifying div (is listening the mouse move event) </th>
             <th></th>
             <th></th>
         </tr>
@@ -136,22 +150,23 @@ All adjustable parameters are defined by default,(but of course you can modify t
             <td>string</td>
             <td>fixed</td>
             <td>Yes</td>
-            <td>-</td>
+            <td> If you change this parameter it won't affect the container div. </td>
         </tr>
          <tr>
             <td>backgroundPositionContent</td>
             <td>string</td>
             <td>0%</td>
             <td>No</td>
-            <td>-</td>
+            <td> If you change this parameter it won't affect the container div.</td>
         </tr>
           <tr>
             <td> backgroundSizeContent</td>
             <td>string</td>
-            <td>120% 120%</td>
-            <td>No</td>
-            <td>-</td>
+            <td>1"20% 120%"</td>
+            <td>Yes</td>
+            <td> If you change this parameter it won't affect the container div. It is required otherwise you won't get the magnifying div.</td>
         </tr>
     </tbody>
 
 </table>
+```
