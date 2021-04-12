@@ -1,8 +1,5 @@
-// @ts-ignore
-import React, { useState, useCallback, useRef, useEffect } from 'react';
-// @ts-ignore
+import React from 'react';
 import { useTrail, animated } from 'react-spring';
-// @ts-ignore
 import propTypes, { number } from 'prop-types';
 import { DivHooks } from './div-hooks';
 interface Props {
@@ -15,13 +12,12 @@ interface Props {
 	backgroundRepeatContent?: string;
 }
 const DivHooksComponent: React.FC<any> = (props: Props) => {
-	const fast = { tension: 1200, friction: 30 };
 	const slow = { mass: 15, tension: 200, friction: 50 };
+	const slower = { mass: 20, tension: 200, friction: 50 };
 	let transRectangle = (x: number, y: number): any => `${x}px`;
-
-	const [cubes, set] = useTrail(props.magnifyingDiv, () => ({
+	const [cubes, set]: Array<any> = useTrail(props.magnifyingDiv, () => ({
 		xy: [0, 0],
-		config: (i: number) => (i === 0 ? slow : slow),
+		config: (i: number) => (i === 0 ? slow : slower),
 	}));
 	console.log(props);
 	return (
@@ -32,16 +28,14 @@ const DivHooksComponent: React.FC<any> = (props: Props) => {
 			backgroundPositionContent={props.backgroundPositionContent}
 			backgroundSizeContent={props.backgroundSizeContent}
 			backgroundRepeatContent={props.backgroundRepeatContent}
-			onMouseMove={(event: Object) => {
-				// @ts-ignore
+			onMouseMove={(event: any) => {
 				set({ xy: [event.clientX, event.clientY] });
 			}}
 		>
-			{cubes.map((props, index) => (
+			{cubes.map((props: any, index: number) => (
 				<animated.div
 					key={index}
 					style={{
-						// @ts-ignore
 						left: props.xy.interpolate(transRectangle),
 					}}
 				/>
