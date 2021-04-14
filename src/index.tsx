@@ -1,10 +1,7 @@
-// @ts-ignore
-import React, { useState, useCallback, useRef, useEffect } from 'react';
-// @ts-ignore
-import propTypes from 'prop-types'; // @ts-ignore
+import React from 'react';
+import propTypes from 'prop-types';
 import { useTrail, animated, useSpring } from 'react-spring';
 import DivHooksComponent from './div-hooks-component';
-
 const AnimationMagnify: React.FC<AnimationMagnifyProps> = ({
 	height,
 	width,

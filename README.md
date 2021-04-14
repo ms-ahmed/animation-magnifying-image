@@ -72,8 +72,7 @@ All adjustable parameters are defined by default,(but of course you can modify t
             <td>backgroundImage</td>
             <td>string</td>
             <td>
-            "url(https://www.partir.com/
-            images/incontournables/japon-hakone
+            "url(https://www.partir.com/images/incontournables/japon-hakone
             -fuji.jpg)"
             </td>
             <td>Yes</td>
